@@ -1,13 +1,189 @@
-body {
+*, *::before, *::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+}
+
+button, input, textarea {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+}
+
+/* hero styling */
+
+.hero {
+  background-color: #33374B;
+  width: 50%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 auto;
+  border-radius: 20px 0 0 20px;
+}
+
+.hero__heading {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 0.1em;
+}
+
+.hero__text {
+  width: 50%;
+  font-weight: 300;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 1em;
+}
+
+/* form styling */
+
+.form {
+  background-color: #8B97D2;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 auto;
+  border-radius: 0 20px 20px 0;
+}
+
+.form__input {
+  display: block;
+  margin-bottom: 1em;
+  width: 325px;
+  max-width: 100%;
+  padding: 0.9em 1.5em;
+  border-radius: 15px;
+  border: none;
+}
+
+.form__input:focus {
+  outline-color: #33374B;
+}
+
+textarea {
+  min-height: 115px;
+}
+
+::placeholder {
+  padding: 0;
+  color: #33374B;
+}
+
+/* button styles */
+
+.btn__dark {
+  background-color: #33374B;
+  color: #8B97D2;
+  padding: 1em 1.7em;
+  border: none;
+  border-radius: 15px;
+ filter: drop-shadow(2px 3px 4px rgba(51, 55, 75, 0.5)); 
+ cursor: pointer;
+ font-weight: 400;
+}
+
+.btn__dark:hover, .btn__dark:focus {
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 15px #fff;
+}
+
+@media (max-width: 800px){
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero, .form {
+    padding: 1.5em 2em;
+  }
+  
+  .hero {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .form {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+/* card styles */
+
+.card {
+  margin: 2em auto;
+  background-color: #33374B;
+  color: white;
+  width: 300px;
+  height: 450px;
+  padding: 2em 3em;
+  background-image: url(../public/logo-thin.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1.7em;
+}
+
+.card__title {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: -0.5em;
+  margin-bottom: 1em;
+}
+
+.card__bio {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-logo {
+  margin-right: 0.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.card__email {
+  color: white;
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+.card__email:hover, .card__email:focus {
+  font-weight: 600;
 }

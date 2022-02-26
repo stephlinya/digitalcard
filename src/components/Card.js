@@ -10,8 +10,8 @@ export default function Card(props) {
             </div>
             <div className="card__footer">
                 <div className="card__socials">
-                    <a href="{props.githubLink}" target="_blank"><img src="./github-logo.png" className="social-logo"/></a>
-                    <a href="{props.linkedinLink}" target="_blank"><img src="./linkedin-logo.png" className="social-logo"/></a>
+                    <a href="{props.githubLink}" target="_blank"><img src="./github-logo.png" className="social-logo" alt=""/></a>
+                    <a href="{props.linkedinLink}" target="_blank"><img src="./linkedin-logo.png" className="social-logo" alt=""/></a>
                 </div>
                 <a href="#" className="card__email">{props.email}</a>
             </div>

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/digitalcard/static/css/main.76000dc1.css",
+    "main.js": "/digitalcard/static/js/main.424087c0.js",
+    "static/js/787.21ac83e2.chunk.js": "/digitalcard/static/js/787.21ac83e2.chunk.js",
+    "static/media/logo-thin.png": "/digitalcard/static/media/logo-thin.dcddf0c282c6a6e0449e.png",
+    "index.html": "/digitalcard/index.html",
+    "main.76000dc1.css.map": "/digitalcard/static/css/main.76000dc1.css.map",
+    "main.424087c0.js.map": "/digitalcard/static/js/main.424087c0.js.map",
+    "787.21ac83e2.chunk.js.map": "/digitalcard/static/js/787.21ac83e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76000dc1.css",
+    "static/js/main.424087c0.js"
+  ]
+}

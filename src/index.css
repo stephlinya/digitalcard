@@ -89,7 +89,7 @@ textarea {
 
 ::placeholder {
   padding: 0;
-  color: #33374B;
+  color: rgba(51, 55, 75, 0.5);
 }
 
 /* button styles */
@@ -100,9 +100,11 @@ textarea {
   padding: 1em 1.7em;
   border: none;
   border-radius: 15px;
- filter: drop-shadow(2px 3px 4px rgba(51, 55, 75, 0.5)); 
- cursor: pointer;
- font-weight: 400;
+  filter: drop-shadow(2px 3px 4px rgba(51, 55, 75, 0.5)); 
+  cursor: pointer;
+  font-weight: 400;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn__dark:hover, .btn__dark:focus {

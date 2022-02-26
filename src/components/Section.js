@@ -27,8 +27,7 @@ export default function Section() {
         })
     }
 
-    function handleSubmit(event) {
-        event.preventDefault();
+    function ifFormValid(){
         setIsSubmitted(prevIsSubmitted => !prevIsSubmitted)
         if(isSubmitted){
             setFormData(prevFormData => {
@@ -44,12 +43,22 @@ export default function Section() {
                     }
                 )
             })
-        }        
+        }   
+    }
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        if(formData.name == "" || formData.email == "" || formData.bio == "" || formData.github__link == "" || formData.linkedin__link == "" ){
+            alert("All forms are required.")
+            return;
+        } else {
+            ifFormValid();
+        }
     }
     
     return (
         <div className="form">
+            {isSubmitted && <p className="form__msg">Thanks for submitting! Here is your personalized digital business card.</p>}
             {isSubmitted && 
                 <Card 
                     fullName={formData.fullName}
